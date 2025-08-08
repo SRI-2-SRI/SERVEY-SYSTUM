@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Survey System</h1>
+        
+        <div class="survey-creator" id="surveyCreator">
+            <h2>Create New Survey</h2>
+            <div class="form-group">
+                <label for="surveyTitle">Survey Title:</label>
+                <input type="text" id="surveyTitle" placeholder="Enter survey title">
+            </div>
+            
+            <div id="questionsContainer">
+                <!-- Questions will be added here -->
+            </div>
+            
+            <button id="addQuestionBtn">Add Question</button>
+            <button id="saveSurveyBtn">Save Survey</button>
+        </div>
+        
+        <div class="survey-viewer" id="surveyViewer" style="display: none;">
+            <h2 id="displaySurveyTitle"></h2>
+            <div id="surveyQuestionsContainer"></div>
+            <button id="submitSurveyBtn">Submit Survey</button>
+        </div>
+        
+        <div class="survey-results" id="surveyResults" style="display: none;">
+            <h2>Thank you for completing the survey!</h2>
+            <p>Your responses have been recorded.</p>
+            <button id="createNewSurveyBtn">Create New Survey</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
